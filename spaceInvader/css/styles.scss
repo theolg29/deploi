@@ -1,3 +1,57 @@
-canvas {
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Outfit, 'Sans-serif';
+}
+
+h1 {
+    font-size: 75px;
+}
+
+.gradient-text {
+    background: linear-gradient(270deg, #00ff11, #1e00ff, #ff0000);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 4s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+p {
+    font-size: 30px;
+    margin-top: -30px;
+    margin-bottom: 50px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rocket {
+    width: 500px;
+    height: 500px;
+    scale: 80%;
+    margin: 50px;
+}
+
+#game {
     background-color: blue;
 }
